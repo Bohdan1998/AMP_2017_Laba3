@@ -1,0 +1,28 @@
+<doctype html>
+<head>
+<script>
+var userName = prompt('Who are YOU?', '');
+
+if (userName == 'admin') {
+
+var pass = prompt('Your pass?', '');
+
+if (pass == 'Savenko') {
+alert( 'Welcome!' );
+} else if (pass == null) { // (*)
+alert( 'Sign in cancel' );
+} else {
+alert( 'Wrong pass' );
+}
+
+} else if (userName == null) { // (**)
+alert( 'Sign in cancel' );
+
+} else {
+
+alert( 'Try another time' );
+
+}
+</script>
+</head>
+</html>
